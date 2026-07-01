@@ -38,7 +38,7 @@ function renderProducts() {
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <p class="price">${product.price}</p>
-      <a class="btn secondary" href="contact.html">Request Item</a>
+      <a class="btn secondary" href="contact.html?product=${product.name}">Request Item</a>
     </article>
   `).join('');
 }
@@ -72,4 +72,15 @@ loginForm?.addEventListener('submit', event => {
 logoutBtn?.addEventListener('click', () => {
   localStorage.removeItem('sarahsCornerLoggedIn');
   showLogin();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const product = params.get("product");
+
+  const productField = document.getElementById("product");
+
+  if (product && productField) {
+    productField.value = product;
+  }
 });
