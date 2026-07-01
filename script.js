@@ -1,5 +1,5 @@
 const products = [
-  { name: 'Custom Gift Basket', category: 'gifts', price: '$45+', icon: '🎁', image: 'https://raw.githubusercontent.com/mikevignery/Sarahs-Corner-Stop/refs/heads/main/beddfe05-9326-4649-9762-3c3064261721.png', description: 'Personalized basket for birthdays, holidays, or celebrations.' },
+  { name: 'Custom Gift Basket', category: 'gifts', price: '$45+', image: 'https://raw.githubusercontent.com/mikevignery/Sarahs-Corner-Stop/refs/heads/main/beddfe05-9326-4649-9762-3c3064261721.png', description: 'Personalized basket for birthdays, holidays, or celebrations.' },
   { name: 'Personalized Home Sign', category: 'decor', price: '$65+', icon: '🏠', description: 'Custom sign with family name, quote, or seasonal design.' },
   { name: 'Party Favor Set', category: 'events', price: '$30+', icon: '🎉', description: 'Custom favors for showers, birthdays, and gatherings.' },
   { name: 'Custom Tumbler', category: 'gifts', price: '$25+', icon: '🥤', description: 'Personalized tumbler with name, phrase, or themed design.' },
