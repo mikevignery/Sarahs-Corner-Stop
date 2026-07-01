@@ -19,6 +19,13 @@ body {
   line-height: 1.6;
 }
 
+.logo img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  padding: 15px;
+}
+
 img { max-width: 100%; display: block; }
 
 a { color: inherit; text-decoration: none; }
