@@ -11,6 +11,18 @@
 
 * { box-sizing: border-box; }
 
+.product-image {
+  height: 180px;        /* adjust to your card design */
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
