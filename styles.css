@@ -70,7 +70,7 @@ h3 { margin: 0 0 8px; }
 .mock-product, .image-placeholder {
   min-height: 240px;
   border-radius: 22px;
-  background: linear-gradient(135deg, var(--blush), var(--rose));
+  background: linear-gradient(135deg, var(--blush), var(--rose)) url('https://raw.githubusercontent.com/mikevignery/Sarahs-Corner-Stop/refs/heads/main/beddfe05-9326-4649-9762-3c3064261721.png') center/cover;
   color: var(--white);
   display: grid;
   place-items: center;
