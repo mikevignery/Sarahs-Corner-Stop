@@ -33,7 +33,7 @@ function renderProducts() {
 
   grid.innerHTML = filtered.map(product => `
     <article class="product-card">
-      <div class="product-image">${product.image}</div>
+      <div class="product-image">${product.icon}</div>
       <span class="category-pill">${product.category}</span>
       <h3>${product.name}</h3>
       <p>${product.description}</p>
