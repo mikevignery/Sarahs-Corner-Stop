@@ -5,8 +5,8 @@ const products = [
   { name: 'Custom Tumbler', category: 'gifts', price: '$25+', icon: '🥤', description: 'Personalized tumbler with name, phrase, or themed design.' },
   { name: 'Seasonal Decor Piece', category: 'decor', price: '$40+', icon: '🍂', description: 'Handmade decor for holidays and seasonal displays.' },
   { name: 'Event Welcome Sign', category: 'events', price: '$75+', icon: '✨', description: 'Custom sign for weddings, showers, parties, and special events.' },
-  { name: 'Seasonal Decor Piece', category: 'decor', price: '$40+', icon: '🍂', description: 'Handmade decor for holidays and seasonal displays.' },
-  { name: 'Event Welcome Sign', category: 'events', price: '$75+', icon: '✨', description: 'Custom sign for weddings, showers, parties, and special events.' }
+  { name: 'Seasonal Decor Piece 2', category: 'decor', price: '$40+', icon: '🍂', description: 'Handmade decor 2 for holidays and seasonal displays.' },
+  { name: 'Event Welcome Sign 2', category: 'events', price: '$75+', icon: '✨', description: 'Custom sign 2 for weddings, showers, parties, and special events.' }
 ];
 
 const navToggle = document.querySelector('.nav-toggle');
