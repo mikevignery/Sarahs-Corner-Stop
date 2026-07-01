@@ -38,7 +38,7 @@ function renderProducts() {
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <p class="price">${product.price}</p>
-      <a class="btn secondary" href="contact.html?productField=${product.name}">Request Item</a>
+      <a class="btn secondary" href="contact.html?product=${encodeURIComponent(product.name)}">Request Item</a>
     </article>
   `).join('');
 }
