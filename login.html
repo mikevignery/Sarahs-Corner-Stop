@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Sarah's Corner</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">Sarah's <span>Corner</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="login-link active" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section container login-layout">
+      <div class="login-panel">
+        <p class="eyebrow">Customer login</p>
+        <h1>View your purchases</h1>
+        <p class="form-note">Demo login only. Use any email and password to preview the customer purchase area.</p>
+        <form id="loginForm" class="contact-form">
+          <label>Email<input id="loginEmail" type="email" required /></label>
+          <label>Password<input id="loginPassword" type="password" required /></label>
+          <button class="btn primary" type="submit">Log In</button>
+        </form>
+      </div>
+
+      <div id="accountPanel" class="account-panel hidden">
+        <div class="account-header">
+          <div>
+            <p class="eyebrow">My account</p>
+            <h2>Purchase History</h2>
+          </div>
+          <button id="logoutBtn" class="btn secondary" type="button">Log Out</button>
+        </div>
+        <div class="purchase-list">
+          <article class="purchase-card">
+            <span class="status">Completed</span>
+            <h3>Custom Gift Basket</h3>
+            <p>Order #SC-1001 • $45.00</p>
+          </article>
+          <article class="purchase-card">
+            <span class="status pending">In Progress</span>
+            <h3>Personalized Home Sign</h3>
+            <p>Order #SC-1002 • $65.00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Sarah's Corner. All rights reserved.</p>
+      <p>Custom made with care.</p>
+    </div>
+  </footer>
+</body>
+</html>

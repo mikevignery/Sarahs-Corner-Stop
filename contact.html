@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sarah's Corner</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">Sarah's <span>Corner</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="login-link" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero container">
+      <p class="eyebrow">Contact</p>
+      <h1>Request a custom order.</h1>
+      <p>Tell us what you would like made, the occasion, preferred colors, quantity, and timeline.</p>
+    </section>
+
+    <section class="section container contact-grid">
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Name<input type="text" name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Phone<input type="tel" name="phone" /></label>
+        <label>Product or request type<input type="text" name="request_type" /></label>
+        <label>Message<textarea name="message" rows="6" required></textarea></label>
+        <button class="btn primary" type="submit">Send Request</button>
+        <p class="form-note">Replace YOUR_FORM_ID with your Formspree ID, or connect this form to your backend.</p>
+      </form>
+      <aside class="contact-card">
+        <h2>Sarah's Corner</h2>
+        <p><strong>Email:</strong> hello@sarahscorner.com</p>
+        <p><strong>Custom orders:</strong> Available by request</p>
+        <p><strong>Turnaround:</strong> Update this with your real production timeline.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Sarah's Corner. All rights reserved.</p>
+      <p>Custom made with care.</p>
+    </div>
+  </footer>
+</body>
+</html>

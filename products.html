@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Sarah's Corner</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html">Sarah's <span>Corner</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="login-link" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero container">
+      <p class="eyebrow">Products</p>
+      <h1>Browse custom made items.</h1>
+      <p>These are sample products. Update names, prices, photos, and descriptions to match Sarah's actual inventory.</p>
+    </section>
+
+    <section class="section container">
+      <div class="product-tools">
+        <input id="productSearch" type="search" placeholder="Search products..." />
+        <select id="categoryFilter">
+          <option value="all">All categories</option>
+          <option value="gifts">Gifts</option>
+          <option value="decor">Home Decor</option>
+          <option value="events">Events</option>
+        </select>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Sarah's Corner. All rights reserved.</p>
+      <p>Custom made with care.</p>
+    </div>
+  </footer>
+</body>
+</html>
