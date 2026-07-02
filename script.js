@@ -6,7 +6,7 @@ const products = [
   { name: 'Seasonal Decor Piece', category: 'decor', price: '$40+', icon: '🍂', description: 'Handmade decor for holidays and seasonal displays.' },
   { name: 'Event Welcome Sign', category: 'events', price: '$75+', icon: '✨', description: 'Custom sign for weddings, showers, parties, and special events.' },
   { name: 'Seasonal Decor Piece 2', category: 'decor', price: '$40+', icon: '🍂', description: 'Handmade decor 2 for holidays and seasonal displays.' },
-  { name: 'Father Mowes Best!', category: 'stickers', price: '$10', image: 'https://github.com/mikevignery/Sarahs-Corner-Stop/blob/main/Father%20mowes%20best.jpg?raw=true', description: 'Let everyone in the neighborhood know your Father Mowes Best!' },
+  { name: 'Father Mowes Best!', category: 'stickers', price: '$10', image: 'https://github.com/mikevignery/Sarahs-Corner-Stop/blob/main/Father%20mowes%20best.jpg', description: 'Let everyone in the neighborhood know your Father Mowes Best!' },
   { name: 'Event Welcome Sign 2', category: 'events', price: '$75+', icon: '✨', description: 'Custom sign 2 for weddings, showers, parties, and special events.' }
 ];
 
