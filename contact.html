@@ -117,7 +117,7 @@ if (product && selectedProductBox) {
       <p>Custom made with care.</p>
     </div>
   </footer>
-  <! -- my JS -->
+ <!--  
   <script>
   const params = new URLSearchParams(window.location.search);
 
@@ -140,6 +140,33 @@ if (product && selectedProductBox) {
       img.alt = product;
     }
   }
-</script> <!-- end my JS -->
+</script> end my JS -->
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+const productName = decodeURIComponent(params.get("product") || "");
+
+// Find the product by name
+const selectedProduct = products.find(product =>
+    product.name.trim().toLowerCase() === productName.trim().toLowerCase()
+);
+
+if (selectedProduct) {
+
+    document.getElementById("selected-product").style.display = "flex";
+
+    document.getElementById("selected-product-image").src = selectedProduct.image;
+    document.getElementById("selected-product-image").alt = selectedProduct.name;
+
+    document.getElementById("selected-product-name").textContent = selectedProduct.name;
+    document.getElementById("selected-product-description").textContent = selectedProduct.description;
+    document.getElementById("selected-product-price").textContent = selectedProduct.price;
+
+    document.getElementById("productField").value = selectedProduct.name;
+
+} else {
+    console.error("Product not found:", productName);
+}
+  </script>
 </body>
 </html>
