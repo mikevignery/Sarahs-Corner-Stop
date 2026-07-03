@@ -1,6 +1,6 @@
 # Sarah's Corner Website
 
-This is a modern responsive starter website for Sarah's Corner. update.
+This is a modern responsive starter website for Sarah's Corner.
 
 ## Pages
 - Home: `index.html`
