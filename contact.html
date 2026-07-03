@@ -30,7 +30,26 @@
     </section>
 
     <!-- my new section --> <script>
-    const params = new URLSearchParams(window.location.search);
+    const products = [
+  {
+    id: "custom-gift-basket",
+    name: "Custom Gift Basket",
+    category: "Gifts",
+    price: "$45+",
+    image: "https://raw.githubusercontent.com/mikevignery/Sarahs-Corner-Stop/refs/heads/main/beddfe05-9326-4649-9762-3c3064261721.png",
+    description: "Personalized basket for birthdays, holidays, or celebrations."
+  },
+  {
+    id: "home-decor",
+    name: "Home Decor",
+    category: "Home Decor",
+    price: "$25+",
+    image: "PASTE_IMAGE_URL_HERE",
+    description: "Custom handmade decor pieces for your home."
+  }
+];
+
+const params = new URLSearchParams(window.location.search);
 const selectedId = params.get("product");
 
 const product = products.find(item => item.id === selectedId);
