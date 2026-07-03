@@ -66,5 +66,29 @@
       <p>Custom made with care.</p>
     </div>
   </footer>
+  <! -- my JS -->
+  <script>
+  const params = new URLSearchParams(window.location.search);
+
+  const product = params.get("product");
+  const price = params.get("price");
+  const image = params.get("image");
+  const desc = params.get("desc");
+
+  if (product) {
+    document.getElementById("selected-product").style.display = "flex";
+    document.getElementById("selected-product-name").textContent = product;
+    document.getElementById("selected-product-price").textContent = price || "";
+    document.getElementById("selected-product-desc").textContent = desc || "";
+    document.getElementById("productField").value =
+      `${product} ${price ? "- " + price : ""}`;
+
+    if (image) {
+      const img = document.getElementById("selected-product-image");
+      img.src = image;
+      img.alt = product;
+    }
+  }
+</script> <!-- end my JS -->
 </body>
 </html>
