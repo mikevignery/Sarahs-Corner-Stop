@@ -28,7 +28,19 @@
       <h1>Request a custom order.</h1>
       <p>Tell us what you would like made, the occasion, preferred colors, quantity, and timeline.</p>
     </section>
-
+    
+ <!-- my section -->
+    <section id="selected-product" class="selected-product" style="display:none;">
+  <img id="selected-product-image" alt="">
+  <div>
+    <p class="eyebrow">Selected Product</p>
+    <h2 id="selected-product-name"></h2>
+    <p id="selected-product-desc"></p>
+    <strong id="selected-product-price"></strong>
+  </div>
+</section>
+    <!-- end my section -->
+    
     <section class="section container contact-grid">
       <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
        <!-- my add --> <input type="hidden" id="productField" name="Selected Product">
@@ -47,17 +59,6 @@
         <p><strong>Turnaround:</strong> Update this with your real production timeline.</p>
       </aside>
     </section>
-    <!-- my section -->
-    <section id="selected-product" class="selected-product" style="display:none;">
-  <img id="selected-product-image" alt="">
-  <div>
-    <p class="eyebrow">Selected Product</p>
-    <h2 id="selected-product-name"></h2>
-    <p id="selected-product-desc"></p>
-    <strong id="selected-product-price"></strong>
-  </div>
-</section>
-    <!-- end my section -->
   </main>
 
   <footer class="site-footer">
