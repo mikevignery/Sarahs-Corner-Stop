@@ -29,7 +29,7 @@
       <p>Tell us what you would like made, the occasion, preferred colors, quantity, and timeline.</p>
     </section>
 
-    <!-- my new section --> <script>
+    <!-- my new section <script>
     const products = [
   {
     id: "custom-gift-basket",
@@ -77,9 +77,9 @@ if (product && selectedProductBox) {
     productInput.value = `${product.name} - ${product.price}`;
   }
 }
-  </script> <!-- end my new section -->
+  </script> end my new section -->
     
- <!-- my old section
+ <!-- my old section -->
     <section id="selected-product" class="selected-product" style="display:none;">
   <img id="selected-product-image" alt="">
   <div>
@@ -89,7 +89,7 @@ if (product && selectedProductBox) {
     <strong id="selected-product-price"></strong>
   </div>
 </section>
-    end my old section -->
+    <!-- end my old section -->
     
     <section class="section container contact-grid">
       <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -124,13 +124,13 @@ if (product && selectedProductBox) {
   const product = params.get("product");
   const price = params.get("price");
   const image = params.get("image");
-  const desc = params.get("desc");
+  const desc = params.get("description");
 
   if (product) {
     document.getElementById("selected-product").style.display = "flex";
     document.getElementById("selected-product-name").textContent = product;
     document.getElementById("selected-product-price").textContent = price || "";
-    document.getElementById("selected-product-desc").textContent = desc || "";
+    document.getElementById("selected-product-desc").textContent = description || "";
     document.getElementById("productField").value =
       `${product} ${price ? "- " + price : ""}`;
 
