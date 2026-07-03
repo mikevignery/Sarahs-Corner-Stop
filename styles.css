@@ -149,3 +149,27 @@ h3 { margin: 0 0 8px; }
   .cta-card, .footer-grid { flex-direction: column; align-items: flex-start; }
   .product-tools { flex-direction: column; }
 }
+
+/* my test for contact form */
+.selected-product {
+  gap: 20px;
+  align-items: center;
+  background: #fff7f2;
+  border: 1px solid #f3d7c8;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.selected-product img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.selected-product .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #b66a45;
+  font-weight: 700;
+}
